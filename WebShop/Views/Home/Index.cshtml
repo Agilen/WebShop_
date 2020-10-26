@@ -1,0 +1,12 @@
+﻿@model HomeViewModel
+
+<h1>Best Staffs</h1>
+<div class="row mt-6 mb-2 ">
+
+    @{
+        foreach (WebShop.Data.Models.Staff staff in Model.favStaffs)
+        {
+            @Html.Partial("AllStaffs", staff)
+        }
+    }
+</div>

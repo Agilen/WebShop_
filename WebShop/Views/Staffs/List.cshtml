@@ -1,0 +1,14 @@
+﻿
+    <h1>All Staffs</h1>
+    <h3>@Model.curStaffCategory</h3>
+
+    <div class="row mt-6 mb-2 ">
+       
+        @{
+            foreach (WebShop.Data.Models.Staff staff in Model.allStaffs)
+            {
+                @Html.Partial("AllStaffs",staff)
+            }
+        }
+    </div>
+
